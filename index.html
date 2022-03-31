@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to Git</title>
+</head>
+<body>
+    <h1>GIT</h1>
+    <p>Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. </p>
+
+    <p>Git est le système de contrôle de version le plus largement utilisé aujourd'hui. À l'origine, il a été développé en 2005 par Linus Torvalds, le créateur bien connu du noyau du système d'exploitation Linux. De plus en plus de projets logiciels reposent sur Git pour le contrôle de version, y compris des projets commerciaux et en open source. </p>
+
+    <p>Git est un outil de gestion de version ou VCS en anglais (version control system) qui permet de stocker un ensemble de fichiers en conservant la chronologie de toutes les modifications qui ont été effectuées dessus.
+
+    Il fait parti de la famille des VCS dit décentralisés car dans son fonctionnement chaque développeur va avoir en local une copie complète de l’historique de son code source (dépôt ou repository en anglai</p>
+
+    <h1>Utilisation</h1>
+    <p>Une des grandes forces de Git, c’est qu’il est multi-plateforme  (Windows, Linux, Mac) et possède deux modes de fonctionnements:
+
+    Terminal: Git peut être utilisé en ligne de commande dans un terminal. Par exemple la commande “git version” permet d’afficher le numéro de version de l’outil.
+    Interface graphique: Git peut également être utilisé via des interfaces graphique plus conviviales que le terminal.</p>
+<h1>GitHub</h1>
+    <p>
+GitHub est une entreprise qui fournit un hébergement de référentiel Git. Cela signifie qu’ils fournissent une solution clé en main pour héberger des référentiels Git sur leurs serveurs. Cela peut être utile pour conserver une sauvegarde de votre référentiel (Git ne suit que les modifications apportées à vos fichiers au fil du temps, le référentiel doit encore être sauvegardé) et pour disposer d’un emplacement centralisé pour conserver et partager votre code avec d’autres.
+GitHub n’est pas le seul à fournir ce type de service. GitLab est l’un de ses principaux concurrents.
+    </p>
+
+
+<h1>installation </h1>
+<p>d'abord verifier si vous avez git sur votre ordinateur en inserant la commande suivante dans votre terminal </p>
+
+<h4>git --version</h4>
+<p>si git n'est pas deja installe visitez les liens suivants pour telecharger le fichier exe puis installer Git </p>
+
+
+    <!--to fix the links-->
+    <p style="color: red;">links should be fixed</p>
+    <a href="https://windows.github.com">GitHub for Windows</a> 
+    <br>
+    <a href=" https://mac.github.com">GitHub for Mac</a>
+    <br>
+    <a href=" http://git-scm.com">Git for All Platforms</a><br>
+    <h4>For Linux and Solaris platforms, the latest release is available on the official Git web site.</h4>
+   
+    <h1>Configuration</h1>
+    <p>dans votre terminal executez les commandes suivantes</p>
+   <h4>git config --global user.name "votre nom"</h4>
+   <h4> git config --global user.email "votre@email.com"</h4>
+ 
+
+   <h3>to be added in a table</h3>
+   <p>configurez votre editeur par defaut</p>
+   <p>Atom <br>
+    ~ git config --global core.editor "atom --wait"~<br>
+    emacs<br>
+    ~ git config --global core.editor "emacs"~<br>
+    nano<br>
+    ~ git config --global core.editor "nano -w"~<br>
+    vim <br>
+    ~ git config --global core.editor "vim"~<br>
+    Sublime Text (Mac)<br>
+    ~ git config --global core.editor "subl -n -w"~<br><br>
+
+    Sublime Text (Windows, installation 32 bits) <br>
+    ~ git config --global core.editor "'c:/program files (x86)/sublime text 3/sublimetext.exe' -w"~<br><br>
+
+    Sublime Text (Windows, installation 64 bits) <br>
+    ~ git config --global core.editor "'c:/program files/sublime text 3/sublimetext.exe' -w"~<br><br>
+
+    Textmate <br>
+    ~ git config --global core.editor "mate -w"~<br></p>
+
+
+    <h2>Sorties colorées </h2>
+<p>Git prend en charge les sorties de terminal en couleur, ce qui en facilite la lecture. Vous pouvez personnaliser votre sortie Git pour utiliser un thème de couleur personnalisé. La commande git config est utilisée pour définir ces valeurs de couleur.
+<h5>git config --global color.ui auto</h5>
+<h5>définir la coloration automatique de la ligne de commande pour Git pour une révision facile</h5>
+    <h1>init et clonage</h1>
+    <h5>git init</h5>
+
+<p>initialiser un répertoire existant en tant que référentiel Git</p>
+<h5>git clone [url]</h5> 
+<p>récupérer un dépôt entier à partir d'un emplacement hébergé via URL</p>
+<h1>Repositories</h1>
+<p>
+    Lorsque vous travaillez avec Git, il est important de se familiariser avec le terme "dépôt" (Repository). Un référentiel Git est un conteneur pour un projet qui est suivi par Git.
+
+    Nous pouvons distinguer deux grands types de dépôts Git:
+    
+    -Dépôt local: un dépôt isolé stocké sur votre propre ordinateur, où vous pouvez travailler sur la version locale de votre projet.
+    <br>
+    -Dépôt distant: généralement stocké en dehors de votre système local isolé, généralement sur un serveur distant. C'est particulièrement utile lorsque vous travaillez en équipe - c'est l'endroit où vous pouvez partager le code de votre projet, voir le code d'autres personnes et l'intégrer dans votre version locale du projet, et également pousser vos modifications vers le référentiel distant.</p>
+
+
+
+
+<h1>branches</h1>
+<h4>git branch</h4>
+<h5>répertoriez vos branches. un * apparaîtra à côté de la branche actuellement active</h5>
+<h4>git branch [branch-name]</h4>
+<h5>créer une nouvelle branche au commit actuel</h5>
+<p>Presque tous les VCS proposent une certaine forme de gestion de branches. Créer une branche signifie diverger de la ligne principale de développement et continuer à travailler sans impacter cette ligne. Pour de nombreux VCS, il s’agit d’un processus coûteux qui nécessite souvent la création d’une nouvelle copie du répertoire de travail, ce qui peut prendre longtemps dans le cas de gros projets.</p>
+
+
+<h1>staging and commiting</h1>
+
+<img src="/imgs/pic1.png" alt="">
+<h3>Enregistrer des changements </h3>
+
+<p>Le développement d'un projet repose sur le processus de base qui s'articule autour de trois étapes : l'édition, le staging et les commits. En premier lieu, vous modifiez vos fichiers dans le répertoire de travail. Lorsque vous êtes prêt à enregistrer une copie de l'état actuel du projet, vous stagez les changements grâce à git add. Quand vous êtes satisfait de l'instantané stagé, vous le commitez dans l'historique du projet grâce à git commit. La commande git reset permet d'annuler un commit ou un instantané stagé.</p>
+
+<h4>git add </h4>
+<p>La commande git add ajoute un changement dans le répertoire de travail à la zone de staging. Elle informe Git que vous voulez inclure les mises à jour dans un fichier particulier du commit suivant. Cependant, git add n'impacte pas le dépôt de manière significative. Les changements ne sont pas réellement enregistrés jusqu'à ce que vous exécutiez git commit.</p>
+</p>
+<h2> Zone de staging </h2>
+<p>Au lieu de commiter tous les changements apportés depuis le dernier commit, la zone de staging vous permet de regrouper les changements liés dans des instantanés ciblés avant de les commiter dans l'historique du projet. Autrement dit, vous pouvez apporter différents changements à des fichiers distincts, revenir en arrière et les séparer en commits logiques en ajoutant des changements liés au staging, puis les commiter un par un. Comme dans tout système de contrôle des révisions, il est important de créer des commits atomiques afin qu'il soit plus facile de suivre les bugs et d'inverser des changements avec un impact minime sur le reste du projet.</p>
+
+
+
+
+<h4>git add <file></h4>
+<p> Permet de stager tous les changements dans <fichier> pour le commit suivant.</p>
+
+<h4>git add <directory></h4>
+<p> Permet de stager tous les changements dans <répertoire> pour le commit suivant.</p>
+<h4>git commit</h4>
+<p>enregistre le commit</p>
+
+       <p>La commande <b>git status</b> permet d'examiner l'état actuel du dépôt et peut être utilisée pour confirmer une promotion git add. La commande git reset permet d'annuler une opération git add. La commande git commit est ensuite utilisée pour commiter un instantané de la zone de staging vers l'historique des commits du dépôt.</p>
+
+       <p><b>git stash</b> stocke (ou stashe) temporairement les changements apportés à votre copie de travail pour que vous puissiez effectuer d'autres tâches, puis revenir et les réappliquer par la suite. Le stashing est pratique si vous avez besoin de changer rapidement de contexte et de travailler sur autre chose, mais que vous êtes en plein dans un changement de code et que n'êtes pas tout à fait prêt à commiter.</p>
+<h4>.gitignore </h4>
+       <p>     un fichier que Git a explicitement reçu pour instruction d'ignorer.
+        Les fichiers ignorés sont généralement des artefacts de build et des fichiers générés par la machine qui sont dérivés de votre dépôt source ou qui ne devraient pas être commités.</p>
+</body>
+
+</html>
