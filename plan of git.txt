@@ -12,11 +12,13 @@ commiting
 
 ----------------------------------------------------
 
-1 Installation et configuration les liens pour chaques OS
-2 verifier si git est installe est determiner sa version par la commande: git --version
+1-Installation et configuration les liens pour chaques OS
+
+2-verifier si git est installe est determiner sa version par la commande: git --version
 apres avoir installe git 
 configuration du nom l'email ainsi que l'editeur par defaut 
-3 setup et init
+
+3-setup et init
 
 
 4- staging ? how does repos work images
