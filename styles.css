@@ -1,3 +1,47 @@
 body{
-    color: blue;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgbargba(0,0,0,0.5)), url(../imgs/bg-pic.jpg);
+ 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 80%;
+    border: 20px solid rgb(228, 209, 185);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 700px;
+
+}
+
+
+.blog{
+    margin-bottom: 20px;
+}
+
+.title{
+    color: #A97155;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.paragraph{
+border-left: 5px solid #E45826;
+padding-left: 5px;
+}
+
+h3{
+    font-size: 2.0rem;
+    color: #BE8C63;
+}
+
+hr{
+    border: 0;
+    height: 0;
+    border-top: 1px solid #BE8C63;
+    border-bottom: 1px solid #BE8C63;
+}
+
+p{
+    color: rgb(0, 0, 0);
+    font-weight: 600;
 }
