@@ -1,5 +1,6 @@
 body{
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgbargba(0,0,0,0.5)), url(../imgs/bg-pic.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.5),
+     rgba(0,0,0,0.5)), url(imgs/bg-pic.jpg);
  
     background-size: cover;
     background-position: center;
@@ -25,7 +26,7 @@ body{
 }
 
 .paragraph{
-border-left: 5px solid #E45826;
+border-left: 5px solid #8d776e;
 padding-left: 5px;
 }
 
@@ -42,6 +43,6 @@ hr{
 }
 
 p{
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-weight: 600;
 }
